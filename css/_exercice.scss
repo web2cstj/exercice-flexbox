@@ -18,22 +18,23 @@
 */
 
 
-.question-1 a {
-    color: #eee;
-    text-decoration: none;
-    background-color: #b5b5b5;
-    border-right: 1px solid #333;
-
+.question-1 { 
     a {
+        //1
+        color: #eee;
+        text-decoration: none;
+        background-color: #b5b5b5;
+        border-right: 1px solid #333;
+        // 3
         display: block;
         padding: 34px;
-
+        // 2
         &:hover {
             color: #6ac9c0;
             background-color: #4d827d;
         }
     }
-
+    // 3
     ul {
         display: flex;
         list-style-type: none;

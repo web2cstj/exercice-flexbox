@@ -73,16 +73,14 @@ section {
   text-decoration: none;
   background-color: #b5b5b5;
   border-right: 1px solid #333;
-}
-.question-1 a a {
   display: block;
   padding: 34px;
 }
-.question-1 a a:hover {
+.question-1 a:hover {
   color: #6ac9c0;
   background-color: #4d827d;
 }
-.question-1 a ul {
+.question-1 ul {
   display: flex;
   list-style-type: none;
 }
@@ -268,4 +266,4 @@ section {
   width: 300px;
   margin: 6px;
   padding: 12px;
-}
+}/*# sourceMappingURL=style.css.map */
