@@ -1,0 +1,249 @@
+
+/* QUESTION 1 */
+/* CONSIGNES : 
+    
+    1- STYLISTIQUE DES LIENS -
+        • Marges intérieures des liens : 34px
+        • Couleur de texte des liens : #eee
+        • Couleur d'arrière-plan des liens : #b5b5b5
+        • Bordure de droite : 1px / pleine / #333
+
+    2- SURVOL DES LIENS -
+        • Couleur du texte : #6ac9c0
+        • Couleur d'arrière-plan : #4d827d
+
+    3- POSITIONNEMENT -
+        • Items de liste sont placés côte à côte
+        • Items de liste ont la largeur de leur contenu
+*/
+
+
+.question-1 a {
+    color: #eee;
+    text-decoration: none;
+    background-color: #b5b5b5;
+    border-right: 1px solid #333;
+
+    a {
+        display: block;
+        padding: 34px;
+
+        &:hover {
+            color: #6ac9c0;
+            background-color: #4d827d;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+    }
+}
+
+
+
+/* QUESTION 2 */
+/* CONSIGNES : 
+    
+    1- STYLISTIQUE DES LIENS -
+        • Marges intérieures des liens : 34px
+        • Couleur de texte des liens : #eee
+        • Couleur d'arrière-plan des liens : #b5b5b5
+
+    2- SURVOL DES LIENS -
+        • Couleur du texte : #6ac9c0
+        • Couleur d'arrière-plan : #4d827d
+    
+    3- LE DERNIER ITEM DE LISTE :
+        • Placé à la limite droite de sa zone
+        • Son lien :
+            • Couleur d'arrière-plan : #d58d8d
+            • Bordure de droite : aucune
+        • Son lien EN SURVOL :
+            • Couleur-d'arrière-plan : #3b2222
+
+    4- POSITIONNEMENT -
+        • Items de liste sont placés côte à côte
+        • Items de liste ont la largeur de leur contenu
+*/
+
+.question-2 ul {
+    display: flex;
+    list-style-type: none;
+
+    a {
+        display: block;
+        padding: 34px;
+        color: #eee;
+        text-decoration: none;
+        background-color: #b5b5b5;
+        border-right: 1px solid #333;
+    }
+
+    a:hover {
+        color: #6ac9c0;
+        background-color: #4d827d;
+    }
+
+    li:last-child {
+        margin-left: auto;
+
+        a {
+            background-color: #d58d8d;
+            border-right: none;
+
+            &:hover {
+                background-color: #3b2222;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+/* QUESTION 3 */
+/* CONSIGNES : 
+    
+    1- STYLISTIQUE DES LIENS -
+        • Marges intérieures des liens : 34px
+        • Couleur de texte des liens : #eee
+        • Couleur d'arrière-plan des liens : #b5b5b5
+
+    2- SURVOL DES LIENS -
+        • Couleur du texte : #6ac9c0
+        • Couleur d'arrière-plan : #4d827d
+    
+    3- LE DERNIER ITEM DE LISTE :
+        • Placé à la limite droite de sa zone
+        • Son lien :
+            • Bordure de droite : aucune
+
+    4- POSITIONNEMENT -
+        • Items de liste sont placés côte à côte
+        • Items de liste s'étirent à l'horizontal
+*/
+
+
+.question-3 ul {
+    display: flex;
+    list-style-type: none;
+
+
+    li {
+        flex-grow: 1;
+    }
+
+    a {
+        display: block;
+        padding: 34px;
+        color: #eee;
+        text-decoration: none;
+        background-color: #b5b5b5;
+        border-right: 1px solid #333;
+        text-align: center;
+
+        &:hover {
+            color: #6ac9c0;
+            background-color: #4d827d;
+        }
+    }
+
+    li:last-of-type a {
+        border-right: none;
+    }
+}
+
+/* QUESTION - 4 */
+/* CONSIGNES : 
+    1- SECTION -
+        • Largeur : 800px
+        • Marges intérieures : 12px;
+
+    2- CONTENEUR de "article-1" et "article-2" -
+        • Largeur : 500px
+    
+    3- ARTICLES - 
+        • Marges intérieures : 12px
+        • ARTICLE-2 : 
+            • Marge ext. de haut : 12px
+        • ARTICLE-3 :
+            • Largeur: 300px
+            • Marge ext. gauche : 12px
+            • Éléments imbriqués centrés verticalement
+
+    4- POSITIONNEMENT : 
+        • Items imbriqués dans la section sont placés côte-à-côte
+*/
+
+.question-4 {
+    width: 800px;
+    padding: 12px;
+    display: flex;
+
+    div {
+        width: 500px;
+    }
+}
+
+
+.article-1 {
+    background-color: #eee;
+    padding: 12px;
+}
+
+.article-2 {
+    background-color: #a8a8a8;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+.article-3 {
+    background-color: #6ac9c0;
+    padding: 12px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+/* QUESTION 5 */
+/* CONSIGNES : 
+    1- SECTION -
+        • Largeur : 800px
+        • Marges int. : 12px
+        • Centré horizontalement
+
+    2- LISTE d'articles :
+        • Sans puce
+
+    3- ITEMS DE LISTE :
+        • Largeur : 300px
+        • Marges ext. : 6px
+        • Marges int. : 12px
+    
+    4- POSITIONNEMENT : 
+        • Items de liste sont placés côte-à-côte
+        • Tout le contenu est centré horizontalement
+*/
+.question-5 {
+    width: 800px;
+    margin: 0 auto;
+    padding: 12px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    li {
+        width: 300px;
+        margin: 6px;
+        padding: 12px;
+    }
+}
